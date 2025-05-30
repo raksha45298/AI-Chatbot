@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>AI Chatbot</h1>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="message bot-message">
+                Hello! I'm your AI assistant. How can I help you today? 😊
+            </div>
+        </div>
+        <div class="chat-input">
+            <button class="emoji-button" onclick="toggleEmojiPicker()">😊</button>
+            <div class="emoji-picker" id="emoji-picker">
+                <div class="emoji-category">
+                    <span>😊</span>
+                    <span>😂</span>
+                    <span>🥰</span>
+                    <span>😎</span>
+                    <span>🤔</span>
+                    <span>😍</span>
+                    <span>🎉</span>
+                    <span>✨</span>
+                    <span>🌟</span>
+                    <span>💖</span>
+                    <span>👍</span>
+                    <span>🎨</span>
+                    <span>🌈</span>
+                    <span>🔥</span>
+                    <span>💫</span>
+                </div>
+            </div>
+            <input type="text" id="user-input" placeholder="Type your message here...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
